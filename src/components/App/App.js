@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Optionalpower from '../OptionalPower/Optionalpower';
 import FixAge from '../FixAge.js/FixAge'
+import CommonDigit from '../CommontDigit/CommonDigit';
 
 class App extends Component {
   render() {
@@ -10,6 +11,7 @@ class App extends Component {
         <header className="App-header">
         <Optionalpower />
         <FixAge />
+        <CommonDigit />
         </header>
       </div>
     );
