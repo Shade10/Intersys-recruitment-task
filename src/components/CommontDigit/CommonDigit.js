@@ -44,6 +44,10 @@ class CommonDigit extends Component {
   render() {
     return (
       <div>
+        <p>
+          <b>Common Digit</b>
+        </p>
+
         <form onSubmit={this.putToArray}>
           <input
             placeholder="Number of N"

@@ -22,17 +22,17 @@ class FixAge extends Component {
   };
 
   isFixed = array => {
-    if(this.state.result !== ""){
-      return this.state.NaN
+    if (this.state.result !== "") {
+      return this.state.NaN;
     }
-    return array.filter(arr => arr >= 18 && arr <= 60) + "" 
+    return array.filter(arr => arr >= 18 && arr <= 60) + "";
   };
 
   isFixedNan = array => {
     if (this.state.resultNaN !== " ") {
       return this.state.NaN;
     }
-    return array.filter(arr => arr >= 18 && arr <= 60) + "" 
+    return array.filter(arr => arr >= 18 && arr <= 60) + "";
   };
 
   componentDidMount() {
@@ -43,12 +43,15 @@ class FixAge extends Component {
   }
 
   render() {
-    let {result, resultNaN} = this.state
+    let { result, resultNaN } = this.state;
     return (
       <div className="fixage">
+        <p>
+          <b>Fixed Age Task</b>
+        </p>
         <p>Tablica - {this.getArray(this.state.arrayTest)}</p>
         <p>Fix Age = {result}</p>
-        
+
         <p>Tablica - {this.getArray(this.state.arrayTestTwo)}</p>
         <p>Fix Age = {resultNaN}</p>
       </div>
